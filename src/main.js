@@ -28,13 +28,19 @@ controls.minDistance = 1;
 controls.maxDistance = 50;
 
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
-scene.add(ambientLight);
+// const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+// scene.add(ambientLight);
 
-const pointLight = new THREE.PointLight(0xffffff, 5);
-pointLight.position.set(3, 3, 3);
-scene.add(pointLight);
+// const pointLight = new THREE.PointLight(0xffffff, 5);
+// pointLight.position.set(3, 3, 3);
+// scene.add(pointLight);
 
+const ambient = new THREE.AmbientLight(0xffffff, 0.3);
+scene.add(ambient);
+
+const directional = new THREE.DirectionalLight(0xffffff, 1);
+directional.position.set (5,10,7);
+scene.add (directional);
 
 const nucleusGeometry = new THREE.SphereGeometry(1.5, 64, 64);
 
