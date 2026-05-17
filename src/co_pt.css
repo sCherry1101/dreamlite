@@ -1,0 +1,30 @@
+body{
+  background: #111;
+  color:#bfa76f;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#cell_bar, #pt_bar{
+  background: rgba(255, 255, 255, 0.03); 
+}
+
+#cell_bar button , #pt_bar button {
+  height: 30px;
+  background: transparent;
+  color: #bfa76f;
+  border: 2px solid #bfa76f; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#cell_bar button:hover , #pt_cell button:hover {
+  background: #bfa76f;
+  color: #111;
+}
+
+#nucleus_dia {
+	margin: 0 auto;
+	width: 400px;
+	height: 300px;
+}
