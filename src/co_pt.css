@@ -23,8 +23,11 @@ body{
   color: #111;
 }
 
-#nucleus_dia {
-	margin: 0 auto;
-	width: 400px;
-	height: 300px;
+#nucleus_dia{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:60vh;
+  width:60vw;
+  border:2px solid #bfa76f;
 }
