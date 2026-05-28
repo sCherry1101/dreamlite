@@ -1,33 +1,53 @@
-body{
-  background: #111;
-  color:#bfa76f;
+body {
+  background: #010103;
+  color: #bfa76f;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
-#cell_bar, #pt_bar{
-  background: rgba(255, 255, 255, 0.03); 
+#navbar {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(191, 167, 111, 0.2);
 }
 
-#cell_bar button , #pt_bar button {
-  height: 30px;
+#cell_bar {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  overflow-x: auto;
+}
+
+#cell_bar button {
+  height: 35px;
+  padding: 0 15px;
   background: transparent;
   color: #bfa76f;
-  border: 2px solid #bfa76f; 
+  border: 2px solid #bfa76f;
   cursor: pointer;
+  white-space: nowrap;
   transition: all 0.3s ease;
 }
-#cell_bar button:hover , #pt_cell button:hover {
+
+#cell_bar button:hover, #cell_bar button.active {
   background: #bfa76f;
   color: #111;
 }
 
-#nucleus_dia{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:60vh;
-  width:60vw;
-  border:2px solid #bfa76f;
+.codia {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 80vw;
+  margin: 20px auto;
+  border: 2px solid #bfa76f;
+  box-shadow: 0 0 20px rgba(191, 167, 111, 0.1);
+}
+
+.codia.active {
+  display: flex;
 }
