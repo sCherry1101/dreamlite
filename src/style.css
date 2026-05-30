@@ -18,8 +18,6 @@ html, body {
   backdrop-filter: blur(10px); 
 }
 
-
-
 .button-group {
   display: flex;
   gap: 15px; 
