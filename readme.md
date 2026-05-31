@@ -68,6 +68,9 @@ Vite
 
 ## How to run?
 
-```npm install
-npm run dev```
+```
+npm install
+npm run dev
+
+```
 
