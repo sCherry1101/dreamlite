@@ -12,3 +12,8 @@ exception.
 -Variables: lowercase or camelCase if needed 
 -Functions: camelCase
 -Each organelle is in individual file and the functions are exported. The exported functions are imported to main.js with page logic and loaders.
+
+#Commits
+
+-keyword: action
+ex- fix: messy code and individual files for each function linked to one main.js
