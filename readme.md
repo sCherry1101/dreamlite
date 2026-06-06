@@ -58,11 +58,11 @@ Not implemented yet! But following are few ideas which will be implemented in fu
 
 Each organelle is built as a separate JavaScript module
 
--Each module  
--Creates its own Three.js scene  
--Sets up its own camera and renderer  
--Builds geometry and materials  
--Runs its own animation loop  
+- Each module  
+- Creates its own Three.js scene  
+- Sets up its own camera and renderer  
+- Builds geometry and materials  
+- Runs its own animation loop  
 
 *Modules are imported into a central main file and initialized when needed*
 
@@ -70,13 +70,13 @@ Each organelle is built as a separate JavaScript module
 
 ## Tech Stack
 
--Three.js
--Vanilla JavaScript 
--Svelte (Periodic table)
--HTML
--CSS
--Vite
--Vercel for deployment
+- Three.js
+- Vanilla JavaScript 
+- Svelte (Periodic table)
+- HTML
+- CSS
+- Vite
+- Vercel for deployment
 
 ---
 
@@ -100,9 +100,11 @@ But to run locally , ensure you have Node.js installed on your system!
     npm install
     ```
 4. Run
-    ``bash
+    ```bash
     npm run dev
     ```
+
+---
 
 ## Credits!
 
