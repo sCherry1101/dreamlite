@@ -23,7 +23,7 @@ The first visualisation is **Cell Organelles**. It consists of:
 
 **2.Periodic table**
 
-The periodic table is extended in another repository. Do checkout ![Periodic-Table-Repository](https://github.com/sCherry1101/periodic-table)
+The periodic table is extended in another repository. Do checkout ![Periodic-Table-Repository](https://github.com/sCherry1101/periodic_table)
 
 
 ## Technology/Mathematics/Engineering Modules
@@ -41,16 +41,16 @@ Not implemented yet! But following are few ideas which will be implemented in fu
 ## Screenshots
 
 ### Nucleus
-![Nucleus](./public/nucleus.png)
+![Nucleus](./public/updated_nuc.png)
 
 ### Endoplasmic Reticulum
-![Endoplasmic Reticulum](./public/er.png)
+![Endoplasmic Reticulum](./public/updated_er.png)
 
 ### Mitochondria
-![Mitochondria](./public/mitochondria.png)
+![Mitochondria](./public/updated_mito.png)
 
-### Animal Cell
-![Animal Cell](./public/ac.png)
+### Periodic Table
+![Periodic Table](./public/updated_pd.png)
 
 ---
 
