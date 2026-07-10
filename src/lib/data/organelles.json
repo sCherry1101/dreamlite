@@ -1,0 +1,75 @@
+{
+  "$schema": "schema/organelles.schema.json",
+  "nu": {
+    "title": "Nucleus",
+    "function": "The nucleus stores DNA and controls the activities of the cell.",
+    "facts": [
+      "Contains the genetic material of the cell.",
+      "Surrounded by a double membrane called the nuclear envelope.",
+      "The nucleolus inside produces ribosomes."
+    ]
+  },
+  "mi": {
+    "title": "Mitochondria",
+    "function": "Produces ATP through cellular respiration and supplies energy to the cell.",
+    "facts": [
+      "Known as the powerhouse of the cell.",
+      "Has its own DNA separate from the nucleus.",
+      "Likely evolved from ancient bacteria through endosymbiosis."
+    ]
+  },
+  "er": {
+    "title": "Endoplasmic Reticulum",
+    "function": "Synthesizes proteins and lipids and transports materials throughout the cell.",
+    "facts": [
+      "Rough ER contains ribosomes attached to its surface.",
+      "Smooth ER helps produce lipids and detoxify chemicals.",
+      "Acts as an internal transport network."
+    ]
+  },
+  "ga": {
+    "title": "Golgi Apparatus",
+    "function": "Modifies, sorts, packages and ships proteins and lipids.",
+    "facts": [
+      "Often called the cell's post office.",
+      "Receives materials from the endoplasmic reticulum.",
+      "Packages products into vesicles for transport."
+    ]
+  },
+  "ly": {
+    "title": "Lysosomes",
+    "function": "Break down waste materials, old organelles and foreign substances.",
+    "facts": [
+      "Contain powerful digestive enzymes.",
+      "Help recycle worn-out cell components.",
+      "More common in animal cells than plant cells."
+    ]
+  },
+  "va": {
+    "title": "Vacuoles",
+    "function": "Store water, nutrients, waste products and other materials.",
+    "facts": [
+      "Plant cells usually have one large central vacuole.",
+      "Help maintain turgor pressure in plants.",
+      "Can occupy most of a plant cell's volume."
+    ]
+  },
+  "ac": {
+    "title": "Animal Cell",
+    "function": "The basic structural and functional unit of animals.",
+    "facts": [
+      "Does not have a cell wall.",
+      "Usually contains many small vacuoles.",
+      "Contains lysosomes for intracellular digestion."
+    ]
+  },
+  "pc": {
+    "title": "Plant Cell",
+    "function": "The basic structural and functional unit of plants.",
+    "facts": [
+      "Contains chloroplasts for photosynthesis.",
+      "Has a rigid cell wall made primarily of cellulose.",
+      "Contains a large central vacuole."
+    ]
+  }
+}

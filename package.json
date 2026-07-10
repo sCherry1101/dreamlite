@@ -1,20 +1,29 @@
 {
   "name": "dreamlite",
   "version": "1.0.0",
-  "description": "",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+  "author": {
+    "name": "Cherry",
+    "email": "cherry11018113@proton.me",
+    "url": "https://github.com/sCherry1101"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
+  "scripts": {
+		"dev": "vite dev --config config/vite.config.js",
+		"build": "vite build --config config/vite.config.js",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''"
+	},
   "dependencies": {
     "three": "^0.184.0"
   },
   "devDependencies": {
-    "vite": "^5.0.0"
+    "@iconify-json/lucide": "^1.2.116",
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.63.0",
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
+    "svelte": "^5.56.1",
+    "unocss": "^66.7.3",
+    "vite": "^8.0.16"
   }
 }

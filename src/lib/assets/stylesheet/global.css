@@ -1,0 +1,11 @@
+@import 'preflight.css';
+
+.page {
+  display         : flex;
+  justify-content : center;
+  background      : #010103;
+  .page__content {
+    color      : #bfa76f;
+    min-height : calc(100vh - 3rem); /* (screen height) - (navbar height) */
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cell Organelles",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" }
+  },
+  "patternProperties": {
+    "^[a-zA-Z0-9_-]+$": {
+      "type": "object",
+      "required": ["title", "function", "facts"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "function": {
+          "type": "string"
+        },
+        "facts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

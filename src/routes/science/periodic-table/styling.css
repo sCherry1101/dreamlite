@@ -1,0 +1,98 @@
+:root {
+  --alkali-metal     : #e29c85;
+  --alkaline-earth   : #e7be84;
+  --basic-metal      : #99c38b;
+  --transition-metal : #e2de8c;
+  --metalloid        : #9acad5;
+  --nonmetal         : #939ec6;
+  --halogen          : #9f8eb9;
+  --noble_gas        : #ba92b9;
+  --lanthanide       : #d890b5;
+  --actinide         : #ce9bbc;
+}
+
+.element-display {
+  display : flex;
+  width   : 100%;
+  justify-content: center;
+  .element-card {
+    width  : 12rem !important;
+    height : 12rem !important;
+    .element-card__atomic-number {
+      font-size: 1rem;
+    }
+    .element-card__symbol {
+      font-size : 3rem;
+      padding   : 1rem 0;
+    }
+    .element-card__name {
+      font-size: 1rem;
+    }
+  }
+}
+
+.periodic-table {
+  .periodic-table__list {
+    display : grid;
+    width   : 100%;
+    padding : 2rem 2px;
+    margin  : auto;
+  }
+  .element-card {
+    cursor: pointer;
+    &:focus {
+      outline   : black 3px solid;
+      transform : scale(1.2);
+      z-index   : 99;
+      opacity   : 1 !important;
+    }
+    &:not([disabled]):hover {
+      opacity: 0.7;
+    }
+    &[disabled] {
+      cursor: default;
+    }
+    .element-card__atomic-number {
+      font-size: 10px;
+    }
+  }
+}
+
+.periodic-table, .element-display {
+  .element-card {
+    color        : black;
+    position     : relative;
+    width        : 100%;
+    height       : 100%;
+    min-width    : 40px;
+    aspect-ratio : 1 / 1;
+    transition   : 50ms all;
+    border       : black 2px solid;
+    .element-card__atomic-number {
+      position : absolute;
+      top      : 2px;
+      left     : 2px;
+    }
+    .element-card__symbol {
+      width       : 100%;
+      font-family : bold;
+    }
+    .element-card__name {
+      text-align    : center;
+      margin        : 0 4px;
+      overflow      : hidden;
+      text-overflow : '..';
+      white-space   : nowrap;
+    }
+  }
+  .alkali_metal     { background: var(--alkali-metal)     }
+  .alkaline_earth   { background: var(--alkaline-earth)   }
+  .basic_metal      { background: var(--basic-metal)      }
+  .transition_metal { background: var(--transition-metal) }
+  .metalloid        { background: var(--metalloid)        }
+  .nonmetal         { background: var(--nonmetal)         }
+  .halogen          { background: var(--halogen)          }
+  .noble_gas        { background: var(--noble_gas)        }
+  .lanthanide       { background: var(--lanthanide)       }
+  .actinide         { background: var(--actinide)         }
+}

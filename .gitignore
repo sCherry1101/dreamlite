@@ -1,4 +1,21 @@
-node_modules
-dist
-.vite
-.envclw
+node_modules/
+
+# Output
+.vercel/
+.output/
+.svelte-kit/
+build/
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+.helix/
+.zed/

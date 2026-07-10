@@ -1,0 +1,13 @@
+section.organelles {
+  .organelles__info {
+    margin-top : 25%;
+    .organelles__title {
+      font-size  : 2rem;
+      text-align : center;
+    }
+    .organelles__list {
+      padding    : 1rem;
+      list-style : circle;
+    }
+  }
+}

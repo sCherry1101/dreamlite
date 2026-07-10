@@ -1,0 +1,17 @@
+.tabs {
+  padding: 1rem 1rem;
+  .tabs__tablist {
+    display: flexbox;
+    justify-content: center;
+    margin-bottom: 12px;
+    .tabs__tab {
+      padding: 8px;
+      margin: 4px 4px;
+      font-size: 1rem;
+    }
+  }
+  .tabs__tabpanel {
+    display: flex;
+    justify-content: center;
+  }
+}
