@@ -1,6 +1,6 @@
 <script>
   import { setContext } from 'svelte'
-  import { fade, fly } from 'svelte/transition'
+  import Button from '../Button'
 
   let { sections, children, active = $bindable() } = $props();
   setContext('tabs_active', {
@@ -11,14 +11,18 @@
 <div class="tabs">
   <ol class="tabs__tablist" role="tablist">
     {#each Object.entries(sections) as [id, title]}
-      <button class="tabs__tab"
-        role="tab"
-        aria-selected={active === id}
-        class:active={active === id}
-        onclick={() => active = id}
-      >
-        {title}
-      </button>
+      <li class="tabs__tab-item">
+        <Button
+          variant={active === id ? 'primary' : 'ghost'}
+          size="sm"
+          onclick={() => active = id}
+          aria-selected={active === id}
+          role="tab"
+          class={active === id ? 'tabs__tab--active' : ''}
+        >
+          {title}
+        </Button>
+      </li>
     {/each}
   </ol>
   <div class="tabs__tabpanel" role="tabpanel">
