@@ -1,6 +1,5 @@
 <script>
   import './styling.css'
-
   import Organelle from './Canvas'
   import Tabs from '$component/Tabs'
   import InfoCard from '$lib/data/organelles.json'
