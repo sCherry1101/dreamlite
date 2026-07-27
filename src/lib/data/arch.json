@@ -1,0 +1,20 @@
+{
+  "oldArch": {
+    "title": "Ancient Indian Architecture",
+    "function": "Traditional Indian architecture is rooted in Sacred Geometry (Vastu Shastra), rock-cut sanctuaries, and monumental temple superstructures (Shikhara and Vimana).",
+    "facts": [
+      "Vastu Shastra provides astronomical alignment and principles of spatial geometry.",
+      "Kailasa Temple at Ellora was carved out of a single monolithic rock from the top down.",
+      "Intricate passive cooling and natural ventilation techniques were engineered into ancient palaces and stepwells (Baolis)."
+    ]
+  },
+  "modernArch": {
+    "title": "Modern Indian Architecture",
+    "function": "Contemporary Indian architecture synthesizes ancient climate-responsive principles with modern structural materials, parametric shapes, and sustainable design.",
+    "facts": [
+      "Combines traditional jali (lattice) screens for solar shading with modern glass & steel.",
+      "Emphasizes eco-friendly materials, rainwater harvesting, and zero-carbon building design.",
+      "Iconic examples include the Lotus Temple in New Delhi and modern eco-friendly campuses."
+    ]
+  }
+}
