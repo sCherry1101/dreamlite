@@ -9,11 +9,11 @@
   },
   "license": "ISC",
   "scripts": {
-		"dev": "vite dev --config config/vite.config.js",
-		"build": "vite build --config config/vite.config.js",
-		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''"
-	},
+    "dev": "vite dev --config config/vite.config.js",
+    "build": "vite build --config config/vite.config.js",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''"
+  },
   "dependencies": {
     "three": "^0.184.0"
   },
