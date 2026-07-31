@@ -1,5 +1,5 @@
 <script>
-  import './styling.css'
+  import '/src/lib/assets/stylesheet/global.css'
 
   let {
     href = undefined,

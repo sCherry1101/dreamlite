@@ -1,6 +1,6 @@
 <script>
   import { getContext } from 'svelte'
-  import './styling.css'
+  import '/src/lib/assets/stylesheet/global.css'
 
   let { key, children } = $props()
   let { current } = getContext('tabs_active')

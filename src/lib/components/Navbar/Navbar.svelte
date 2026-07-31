@@ -1,6 +1,6 @@
 <script>
   import { slide } from 'svelte/transition'
-  import './styling.css'
+  import '/src/lib/assets/stylesheet/global.css'
   import Button from '../Button'
 
   let {
