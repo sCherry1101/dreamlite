@@ -1,7 +1,6 @@
 .page {
   display         : flex;
   justify-content : center;
-  background      : #010103;
   .page__content {
     color      : #ffffff;
     min-height : calc(100vh - var(--navbar-height, 4rem)); 
