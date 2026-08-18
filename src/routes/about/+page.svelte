@@ -6,7 +6,7 @@
   <h1>Contributions</h1>
     <p>Dreamlite is an open source project and contributions are welcome. You can contribute </p>
 
-  <h1>Contributors</h1>>
+  <h1>Contributors</h1>
 
   <ul>
     <li><
