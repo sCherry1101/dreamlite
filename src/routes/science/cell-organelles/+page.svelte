@@ -18,7 +18,7 @@
   let info = $derived(InfoCard[active]);
 </script>
 
-<section class="organelles" md="block" lg="flex">
+<section class="organelles">
   <article class="organelles__view">
     <Tabs.Root sections={views} bind:active={active}>
       <Organelle.Canvas>

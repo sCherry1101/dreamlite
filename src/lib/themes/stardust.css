@@ -1,0 +1,10 @@
+:root[data-theme="stardust"] {
+  --bg-primary:#0b0814;
+  --bg-secondary:#151022;
+
+  --text-primary:#eee8ff;
+  --text-secondary:#aaa0c5;
+
+  --accent:#c9a7ff;
+  --border:#302642;
+}

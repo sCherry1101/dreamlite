@@ -1,4 +1,56 @@
-#homepage_box{
-    display:flex;
-    flex-direction:column;
+#homepage_box,
+#science_box,
+#error_div {
+  min-height: calc(100vh - 5rem);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 4rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-group {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.subject-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  #homepage_box,
+  #science_box,
+  #error_div {
+    min-height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .card-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button-group {
+    width: 100%;
+  }
 }

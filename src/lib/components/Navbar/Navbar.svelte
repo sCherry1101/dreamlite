@@ -22,10 +22,24 @@
   function closeMenu() {
     mobileMenuOpen = false;
   }
+  
+    let theme = 'default';
+
+    function setTheme(newTheme) {
+        theme = newTheme;
+
+        if (newTheme === 'default') {
+            document.documentElement.removeAttribute('data-theme');
+        } else {
+            document.documentElement.dataset.theme = newTheme;
+        }
+    }
+
 </script>
 
 <header class="navbar">
   <div class="navbar__container">
+
     <a href={brandUrl} class="navbar__brand" onclick={closeMenu}>
       <span class="navbar__brand-text">{brand}</span>
     </a>
@@ -49,42 +63,28 @@
       </ul>
     </nav>
 
-    <button 
-      class="navbar__toggle" 
-      aria-label="Toggle Menu" 
-      aria-expanded={mobileMenuOpen}
-      onclick={toggleMenu}
-    >
-      <div class="navbar__toggle-icon" class:navbar__toggle-icon--active={mobileMenuOpen}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </button>
-  </div>
+    <div class="theme-switcher">
+      <button
+        class="theme-button"
+        onclick={() => setTheme('default')}
+      >
+        Default
+      </button>
 
-  {#if mobileMenuOpen}
-    <div class="navbar__mobile-menu" transition:slide={{ duration: 250 }}>
-      <nav class="navbar__nav-mobile">
-        <ul class="navbar__mobile-links">
-          {#each links as link}
-            <li>
-              <a
-                href={link.href}
-                class="navbar__mobile-link"
-                target={link.external ? '_blank' : undefined}
-                rel={link.external ? 'noopener noreferrer' : undefined}
-                onclick={closeMenu}
-              >
-                {#if link.icon}
-                  <i class="navbar__mobile-icon {link.icon}"></i>
-                {/if}
-                <span>{link.label}</span>
-              </a>
-            </li>
-          {/each}
-        </ul>
-      </nav>
+      <button
+        class="theme-button"
+        onclick={() => setTheme('light')}
+      >
+        Light
+      </button>
+
+      <button
+        class="theme-button"
+        onclick={() => setTheme('stardust')}
+      >
+        Stardust
+      </button>
     </div>
-  {/if}
+
+  </div>
 </header>

@@ -1,0 +1,10 @@
+:root[data-theme="light"] {
+  --bg-primary:#f5f5f5;
+  --bg-secondary:#ffffff;
+
+  --text-primary:#171717;
+  --text-secondary:#666666;
+
+  --accent:#7057c9;
+  --border:#dddddd;
+}

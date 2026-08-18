@@ -1,13 +1,18 @@
 <script>
-	import 'uno.css'
-	import "$asset/stylesheet/global.css"
+  import "$asset/stylesheet/global.css"
+  import "$asset/stylesheet/layout.css"
 
-	import Navbar from "$component/Navbar"
+  import "$lib/themes/default.css"
+  import "$lib/themes/light.css"
+  import "$lib/themes/stardust.css"
 
-	let { children } = $props();
+  import Navbar from "$component/Navbar"
+
+  let { children } = $props()
 </script>
 
-<Navbar/>
+<Navbar />
+
 <div class="page">
   <main class="page__content" w-screen-2xl>
     {@render children()}

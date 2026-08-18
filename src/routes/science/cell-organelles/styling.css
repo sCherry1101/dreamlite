@@ -1,13 +1,53 @@
-section.organelles {
+.organelles {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 5rem);
+}
+
+.organelles__view {
+  flex: 1;
+  min-width: 0;
+}
+
+.organelles__info {
+  flex: 0 0 320px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.organelles__title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.organelles__list {
+  padding: 1rem;
+  list-style: circle;
+}
+
+.three-container {
+  width: 100%;
+  height: calc(100vh - 5rem);
+}
+
+.three-container canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .organelles {
+    display: block;
+    min-height: auto;
+  }
+
+  .three-container {
+    height: 60vh;
+  }
+
   .organelles__info {
-    margin-top : 25%;
-    .organelles__title {
-      font-size  : 2rem;
-      text-align : center;
-    }
-    .organelles__list {
-      padding    : 1rem;
-      list-style : circle;
-    }
+    width: 100%;
+    padding: 1.5rem;
   }
 }

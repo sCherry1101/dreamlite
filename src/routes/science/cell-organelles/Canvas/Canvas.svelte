@@ -38,7 +38,7 @@
   });
 </script>
 
-<div bind:clientWidth={container.width} bind:clientHeight={container.height} w-full h-screen>
+<div class="three-container" bind:clientWidth={container.width} bind:clientHeight={container.height}>
   <canvas bind:this={canvas}>
     <p>Canvas is not supported!</p>
   </canvas>
